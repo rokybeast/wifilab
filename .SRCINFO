@@ -1,0 +1,12 @@
+pkgbase = wifilab
+	pkgdesc = Automatic and Ready-to-use WiFi Pentesting Helpers
+	pkgver = 1.0.0
+	pkgrel = 1
+	url = https://github.com/rokybeast/wifilab
+	arch = any
+	depends = iw
+	depends = iwd
+	source = wifilab-1.0.0.tar.gz::https://github.com/rokybeast/wifilab/archive/v1.0.0.tar.gz
+	sha256sums = SKIP
+
+pkgname = wifilab
