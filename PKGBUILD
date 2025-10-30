@@ -7,7 +7,7 @@ arch=('any')
 url="https://github.com/rokybeast/wifilab"
 depends=('iw' 'iwd')
 source=("${pkgname}-${pkgver}.tar.gz::${url}/archive/v${pkgver}.tar.gz")
-sha256sums=('SKIP')  # Update with actual checksum later
+sha256sums=('a6c6701f07d0a954a940ec117888bc08cd9d1c4a984ec0d011c9d305ae657317') # updated
 
 package() {
     cd "${srcdir}/${pkgname}-${pkgver}"
