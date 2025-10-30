@@ -1,15 +1,13 @@
 #!/bin/bash
 
-SCRIPTS_DIR="$(dirname "$0")/scripts"
+SCRIPTS_DIR="/usr/bin/wifilab/scripts"
 
 if [ ! -d "$SCRIPTS_DIR" ]; then
     echo "Error: Scripts directory not found at $SCRIPTS_DIR"
     exit 1
 fi
-
-# List available scripts
 echo "Available scripts:"
-echo "-----------------"
+echo "------------------"
 
 # Create array of script files
 scripts=()
