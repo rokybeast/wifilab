@@ -7,6 +7,6 @@ pkgbase = wifilab
 	depends = iw
 	depends = iwd
 	source = wifilab-1.0.0.tar.gz::https://github.com/rokybeast/wifilab/archive/v1.0.0.tar.gz
-	sha256sums = SKIP
+	sha256sums = a6c6701f07d0a954a940ec117888bc08cd9d1c4a984ec0d011c9d305ae657317
 
 pkgname = wifilab

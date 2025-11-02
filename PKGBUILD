@@ -12,11 +12,11 @@ sha256sums=('a6c6701f07d0a954a940ec117888bc08cd9d1c4a984ec0d011c9d305ae657317') 
 package() {
     cd "${srcdir}/${pkgname}-${pkgver}"
     
-    # Install every script
+    # Install every script into /usr/bin (not a nested /usr/bin/wifilab/ dir)
     for script in src/scripts/*.sh; do
         [ -f "$script" ] || continue
         scriptname=$(basename "$script" .sh)  # Remove .sh extension
-        install -Dm755 "$script" "${pkgdir}/usr/bin/wifilab/${scriptname}"
+        install -Dm755 "$script" "${pkgdir}/usr/bin/${scriptname}"
     done
     # Install the wifilab script
     install -Dm755 src/wifilab.sh "${pkgdir}/usr/bin/wifilab"

@@ -1,9 +1,9 @@
 #!/bin/bash
 
-SCRIPTS_DIR="/usr/bin/wifilab/scripts"
+SCRIPTS_DIR="scripts"
 
 if [ ! -d "$SCRIPTS_DIR" ]; then
-    echo "Error: Scripts directory not found at $SCRIPTS_DIR"
+    echo "Error: No Scripts found, at: $SCRIPTS_DIR"
     exit 1
 fi
 echo "Available scripts:"
